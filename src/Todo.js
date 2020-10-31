@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./Todo.css";
 
 class Todo extends Component {
   constructor(props) {
@@ -32,23 +33,31 @@ class Todo extends Component {
   render() {
     if (this.state.isediting) {
       return (
-        <form onSubmit={this.handleUpdate}>
+        <form className='Todo-edit-form' onSubmit={this.handleUpdate}>
           <input
+            className='Todo-edit-form-input'
             autocomplete='off'
             type='text'
             name='todo'
             value={this.state.todo}
             onChange={this.handleChange}
+            required
           />
-          <input type='submit' value='save' />
+          <input className='Todo-edit-form-button' type='submit' value='save' />
         </form>
       );
     } else {
       return (
-        <div>
-          <li>{this.props.todo}</li>
-          <button onClick={this.toggleState}>Edit</button>
-          <button onClick={this.handleRemove}>Delete</button>
+        <div className='Todo'>
+          <span className='Todo-task'>{this.props.todo}</span>
+          <div classNmae="Todo-buttons">
+            <button className='Todo-button' onClick={this.toggleState}>
+              Edit
+            </button>
+            <button className='Todo-button' onClick={this.handleRemove}>
+              Delete
+            </button>
+          </div>
         </div>
       );
     }

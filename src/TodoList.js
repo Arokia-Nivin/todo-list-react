@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Todo from "./Todo";
 import NewTodo from "./NewTodo";
+import "./TodoList.css";
 
 class TodoList extends Component {
   constructor(props) {
@@ -25,7 +26,7 @@ class TodoList extends Component {
     let { todos } = this.state;
     this.setState({
       todos: todos.map((ele) => {
-        if (ele.id === todoid) return { id: todoid, todo: newtodo };
+        if (ele.id === todoid) return { ...ele, todo: newtodo };
         return ele;
       }),
     });
@@ -42,10 +43,11 @@ class TodoList extends Component {
       />
     ));
     return (
-      <ul>
+      <div class='TodoList'>
+        <h1 class='TodoList-title'>Todo List</h1>
         <NewTodo createTodo={this.createTodo} />
         {list}
-      </ul>
+      </div>
     );
   }
 }

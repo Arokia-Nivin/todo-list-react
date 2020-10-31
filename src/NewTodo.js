@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { v4 } from "uuid";
-
+import "./NewTodo.css";
 class NewTodo extends Component {
   constructor(props) {
     super(props);
@@ -18,19 +18,21 @@ class NewTodo extends Component {
   };
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
-        <label htmlFor='todo'>New Todo</label>
-        <input
-          autocomplete='off'
-          type='text'
-          name='todo'
-          id='todo'
-          value={this.state.todo}
-          onChange={this.handlechange}
-          required
-        />
-        <input type='submit' value='add new todo' />
-      </form>
+      <div>
+        <form className='NewTodo-form' onSubmit={this.handleSubmit}>
+          <input
+            class='NewTodo-form-input'
+            autocomplete='off'
+            type='text'
+            name='todo'
+            id='todo'
+            value={this.state.todo}
+            onChange={this.handlechange}
+            required
+          />
+          <button class='NewTodo-form-button'>+</button>
+        </form>
+      </div>
     );
   }
 }
