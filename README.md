@@ -4,6 +4,10 @@
 
 This is a simple TodoList Application made with react. 
 
+## View Live App at
+
+<a href="https://arokianivin09.github.io/TodoList-ReactApp/">:octocat: TodoList React App :octocat:</a>
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -20,6 +24,4 @@ Creates a production build of the application which can be deployed to any stati
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
-## View Live App at
 
-<a href="https://arokianivin09.github.io/TodoList-ReactApp/">:octocat: TodoList React App :octocat:</a>
