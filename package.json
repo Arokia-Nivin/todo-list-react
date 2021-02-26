@@ -1,6 +1,6 @@
 {
-  "name": "todolist",
-  "homepage": "https://arokianivin09.github.io/TodoList-ReactApp/",
+  "name": "todo-list-react",
+  "homepage": "https://EzioAuditore-daFirenze.github.io/todo-list-react/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
