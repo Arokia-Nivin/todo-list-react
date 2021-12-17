@@ -6,7 +6,7 @@ This is a simple TodoList Application made with react.
 
 ## View Live App at
 
-<a href="https://EzioAuditore-daFirenze.github.io/todo-list-react/">:octocat: TodoList React App :octocat:</a>
+<a href="https://arokia-nivin.github.io/todo-list-react/">:octocat: TodoList React App :octocat:</a>
 
 ## Available Scripts
 
